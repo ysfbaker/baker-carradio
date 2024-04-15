@@ -111,7 +111,7 @@ function secondsToHms(d) {
 
 function getNameFile(url) {
 	if (url == undefined) {
-		vidname = "Hiçbir Müzik Açmadınız";
+		vidname = "You didn't turn on any music";
 		document.getElementById("yazısı").innerHTML = "<b></b><marquee direction = 'right'> "+ vidname + "</marquee>"
 	} else {
 		$.getJSON('https://noembed.com/embed?url=', {format: 'json', url: url}, function (data) {
